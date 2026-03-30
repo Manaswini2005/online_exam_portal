@@ -27,7 +27,7 @@ Online-Exam-Portal/
 │── requirements.txt   # Dependencies
 ⚙️ Installation & Setup
 Clone the repository
-git clone https://github.com/Manaswini2005/online-exam-portal.git
+git clone https://github.com/Manaswini2005/online_exam_portal.git
 Navigate to the project folder
 cd online-exam-portal
 Install dependencies
