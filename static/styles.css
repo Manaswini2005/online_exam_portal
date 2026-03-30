@@ -1,0 +1,338 @@
+/* 🌈 Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌈 Background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #5f6caf, #8f5cc6);
+}
+
+/* 🎯 Center layout (login/register/create exam) */
+.center-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 📦 Container (dashboard pages) */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: left;
+}
+.form-container {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+/* 🧊 Card (MAIN FIXED DESIGN) */
+.card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 350px;              /* 🔥 fixed width like login */
+}
+
+/* 🎯 Headings */
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Fix heading inside card */
+.card h2 {
+    color: #333;
+}
+
+/* 🧾 Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.form-container button {
+    width: 60%;
+    max-width: 600px;
+    margin: 10px auto;
+    display: block;
+}
+/* 🧾 Form group */
+.form-group {
+    width: 100%;
+    text-align: left;
+}
+
+/* 🏷 Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* 🧾 Inputs */
+input {
+     width: 60%;              /* 🔥 control width */
+    max-width: 600px;        /* optional limit */
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f5f5f5;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    font-size: 14px;
+
+    display: block;          /* 🔥 needed for centering */
+    margin: 10px 0;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #667eea;
+    background-color: #fff;
+}
+
+/* 🚀 Buttons */
+button {
+    width: 60%;
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 10px auto;
+    display: block;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+/* 🔗 Links */
+a {
+    text-decoration: none;
+    color: #667eea;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+/* 📊 Grid (dashboard cards) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* ⚠️ Messages */
+.error {
+    color: red;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+/* 🎯 RADIO BUTTON FIX */
+.radio-group {
+    margin: 15px 0;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.radio-item input {
+    width: auto;
+    margin: 0;
+}
+.logout-btn {
+    margin-top: 30px;
+    width: auto;
+    display: block;
+    padding: 10px 20px;
+    background: #ff5e57;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0;
+    
+}
+.logout-btn:hover {
+    background: #e63939;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+.dashboard-container {
+    padding: 30px 50px;
+    text-align: left;
+}
+.dashboard-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.test-container {
+    display: flex;
+    gap: 35px;
+     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.test-card {
+    background: #f1f1f1;
+    padding: 20px;
+    width: 250px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.test-btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #5f6caf;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Container */
+.leaderboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Title */
+.leaderboard-title {
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Table */
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Table header */
+.leaderboard-table th {
+    background: #5f6caf;
+    color: white;
+    padding: 12px;
+}
+
+/* Table cells */
+.leaderboard-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Alternate row color */
+.leaderboard-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Hover effect */
+.leaderboard-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Back button */
+.back-btn {
+    margin-top: 25px;
+    width: 200px;
+}
+.leaderboard-table tr:nth-child(2) {
+    background: gold;
+}
+.leaderboard-table tr:nth-child(3) {
+    background: silver;
+}
+.leaderboard-table tr:nth-child(4) {
+    background: #cd7f32;
+}
+/* Container */
+.results-container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Title */
+.results-title {
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Table */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.results-table th {
+    background: #5f6caf;
+    color: white;
+    padding: 12px;
+}
+
+/* Data */
+.results-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Hover */
+.results-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Back button */
+.back-btn {
+    margin-top: 25px;
+    width: 200px;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
